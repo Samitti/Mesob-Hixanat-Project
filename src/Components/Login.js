@@ -98,6 +98,7 @@ const SignUp = styled.a`
     &:hover {
         /* background-color: #0483ee; */
         background-color: lightgreen;
+        cursor: pointer;
     }
 `;
 
