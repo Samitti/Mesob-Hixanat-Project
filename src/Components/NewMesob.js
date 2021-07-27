@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import { useSelector } from "react-redux";
-import { selectNewMesob } from "../redux/movieSlice";
 
 const NewMesob = (props) => {
 
