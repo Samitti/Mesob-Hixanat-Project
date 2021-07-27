@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import { useSelector } from "react-redux";
-import { selectNewMesob } from "../features/movie/movieSlice";
+import { selectNewMesob } from "../redux/movieSlice";
 
 const NewMesob = (props) => {
 
-    const movies = useSelector(selectNewMesob);
+    const movies = useSelector((state)=> state.movies);
 
     return (
 
@@ -18,7 +18,7 @@ const NewMesob = (props) => {
                             {movie.id}
                             <Link to={'/detail/' + movie.id}>
                                 <img src={"https://i9.ytimg.com/vi_webp/1Xz1i5mWabs/mqdefault.webp?v=60ae459b&sqp=CIz61oYG&rs=AOn4CLBZuJ9zQMi7_HNm8ayhd9HSYMrnsQ"} alt={movie.title} />
-                                {console.log(movie.cardImg)}
+                                {console.log(movies)}
                             </Link>
                         </Wrap>
                     ))
