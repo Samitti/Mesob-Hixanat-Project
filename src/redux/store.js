@@ -5,7 +5,7 @@ import movieReducer from "../redux/movieSlice";
 export default configureStore({
     reducer: {
         user : userReducer,
-        movie: movieReducer,
+        movies: movieReducer,
     },
     middleware: getDefaultMiddleware({
         serializableCheck: false,

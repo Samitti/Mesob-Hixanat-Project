@@ -17,8 +17,7 @@ const NewMesob = (props) => {
                         <Wrap key={key}>
                             {movie.id}
                             <Link to={'/detail/' + movie.id}>
-                                <img src={"https://i9.ytimg.com/vi_webp/1Xz1i5mWabs/mqdefault.webp?v=60ae459b&sqp=CIz61oYG&rs=AOn4CLBZuJ9zQMi7_HNm8ayhd9HSYMrnsQ"} alt={movie.title} />
-                                {console.log(movies)}
+                                <img src={"/images/MesobThumbnails/" + movie.thumb_nail} alt={movie.title} />
                             </Link>
                         </Wrap>
                     ))
