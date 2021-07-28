@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
+import ReactPlayer from "react-player";
 
 const Detail = (props) => {
   const { id } = useParams();
@@ -9,18 +10,21 @@ const Detail = (props) => {
  
   return (
     <Container>
-         <div>
+         <VideoContainer>
                 {
                     movies && movies.map((movie, key) => (
-                        <div key={key}>
-                            {movie.id === parseInt(id)  ? <div >
-                                <img src={"/images/MesobThumbnails/" + movie.thumb_nail} alt={movie.title} />
-                            </div> : <p />}
+                        
+                            movie.id === parseInt(id)  ? <OuterVideFrame key={key}>
+                                <ReactPlayer width='100%' controls url={movie.video_url}/>
+                                <div>
+                                  <h3>MH - Natu and Betu {movie.title}</h3>
+                                </div>
+                            </OuterVideFrame> : <p />
                             
-                        </div>
+                        
                     ))
                 }
-            </div>
+            </VideoContainer>
     </Container>
   );
 };
@@ -34,4 +38,16 @@ const Container = styled.div`
   padding: 0 calc(3.5vw + 5px);
 `;
 
+const VideoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const OuterVideFrame = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+`;
 export default Detail;

@@ -62,25 +62,22 @@ const Header = (props) => {
                             <span>HOME</span>
                         </a>
                         <a href="/">
-                            <img src="/images/search-icon.svg" alt="Home" />
-                            <span>SEARCH</span>
-                        </a>
-                        <a href="/">
-                            <img src="/images/watchlist-icon.svg" alt="Home" />
-                            <span>WATCHLIST</span>
-                        </a>
-                        <a href="/">
-                            <img src="/images/original-icon.svg" alt="Home" />
-                            <span>ORIGINALS</span>
+                            <img src="/images/series-icon.svg" alt="Home" />
+                            <span className='tig'>ፊደላት</span>
                         </a>
                         <a href="/">
                             <img src="/images/movie-icon.svg" alt="Home" />
-                            <span>MOVIES</span>
+                            <span className='tig'>መዛሙር</span>
                         </a>
                         <a href="/">
-                            <img src="/images/series-icon.svg" alt="Home" />
-                            <span>SERIES</span>
+                            <img src="/images/watchlist-icon.svg" alt="Home" />
+                            <span className='tig'>ቁጽርታት</span>
+                        </a>                        
+                        <a href="/">
+                            <img src="/images/search-icon.svg" alt="Home" />
+                            <span>ERI GEO KIDS</span>
                         </a>
+                        
                     </NavMenu>
                     <SignOut>
                         <UserImg src={userPhoto} alt={userName} />
@@ -145,6 +142,9 @@ const NavMenu = styled.div`
             height: 20px;
             min-width: 20px;
             width: 20px;
+        }
+        .tig {
+            font-size: 18px;
         }
 
         span {

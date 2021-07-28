@@ -14,7 +14,7 @@ const NewMesob = (props) => {
                 {
                     movies && movies.map((movie, key) => (
                         <Wrap key={key}>
-                            {movie.id}
+                            {movie.title}
                             <Link to={'/detail/' + movie.id}>
                                 <img src={"/images/MesobThumbnails/" + movie.thumb_nail} alt={movie.title} />
                             </Link>
