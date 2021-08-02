@@ -60,24 +60,28 @@ const Header = (props) => {
                         <a href="/home">
                             <img src="/images/home-icon.svg" alt="Home" />
                             <span>HOME</span>
-                        </a>
+                        </a>     
                         <a href="/">
                             <img src="/images/series-icon.svg" alt="Home" />
                             <span className='tig'>ፊደላት</span>
-                        </a>
-                        <a href="/">
-                            <img src="/images/movie-icon.svg" alt="Home" />
-                            <span className='tig'>መዛሙር</span>
-                        </a>
+                        </a>                   
                         <a href="/">
                             <img src="/images/watchlist-icon.svg" alt="Home" />
                             <span className='tig'>ቁጽርታት</span>
-                        </a>                        
+                        </a>
+                        <a href="/">
+                            <img src="/images/original-icon.svg" alt="Home" />
+                            <span className='tig'>መዛሙር</span>
+                        </a>
+                        <a href="/">
+                            <img src="/images/movie-icon.svg" alt="Home" />
+                            <span className='tig'>ዛንታታት</span>
+                        </a>
+                        
                         <a href="/">
                             <img src="/images/search-icon.svg" alt="Home" />
                             <span>ERI GEO KIDS</span>
                         </a>
-                        
                     </NavMenu>
                     <SignOut>
                         <UserImg src={userPhoto} alt={userName} />

@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getMoviesAsync = createAsyncThunk('movies/getMoviesAsync', 
     async () => {
-        const response = await fetch('http://localhost:4000/movies');
+        const response = await fetch('https://mesob-api.herokuapp.com/movies');
         if (response.ok) {
             const movies = await response.json();
             return { movies }
