@@ -60,26 +60,27 @@ const Header = (props) => {
                         <a href="/home">
                             <img src="/images/home-icon.svg" alt="Home" />
                             <span>HOME</span>
-                        </a>
+                        </a>     
                         <a href="/">
-                            <img src="/images/search-icon.svg" alt="Home" />
-                            <span>SEARCH</span>
-                        </a>
+                            <img src="/images/series-icon.svg" alt="Home" />
+                            <span className='tig'>ፊደላት</span>
+                        </a>                   
                         <a href="/">
                             <img src="/images/watchlist-icon.svg" alt="Home" />
-                            <span>WATCHLIST</span>
+                            <span className='tig'>ቁጽርታት</span>
                         </a>
                         <a href="/">
                             <img src="/images/original-icon.svg" alt="Home" />
-                            <span>ORIGINALS</span>
+                            <span className='tig'>መዛሙር</span>
                         </a>
                         <a href="/">
                             <img src="/images/movie-icon.svg" alt="Home" />
-                            <span>MOVIES</span>
+                            <span className='tig'>ዛንታታት</span>
                         </a>
+                        
                         <a href="/">
-                            <img src="/images/series-icon.svg" alt="Home" />
-                            <span>SERIES</span>
+                            <img src="/images/search-icon.svg" alt="Home" />
+                            <span>ERI GEO KIDS</span>
                         </a>
                     </NavMenu>
                     <SignOut>
@@ -145,6 +146,9 @@ const NavMenu = styled.div`
             height: 20px;
             min-width: 20px;
             width: 20px;
+        }
+        .tig {
+            font-size: 18px;
         }
 
         span {
