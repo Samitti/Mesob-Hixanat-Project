@@ -9,6 +9,9 @@ This project is a website for mesobhixanat youtube channel, which provides a sub
 - React-router-dom
 - React-redux
 - Redux
+- React styled components
+- Firebase google authentication
+- Rails API
 - npm
 - ES6
 - CSS
